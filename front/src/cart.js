@@ -3,7 +3,6 @@ import { makeElement } from "./utility/makeElement.mjs";
 import { modal } from "./utility/modal.mjs";
 import { Cart } from "./app/Cart.js";
 import { Contact } from "./app/Contact.mjs";
-import { LocalStorageInterface } from "./app/LocalStorageInterface.mjs";
 import { apiInterface } from "./app/apiInterface.mjs";
 import { getURLparam } from "./utility/utility.mjs";
 
@@ -22,7 +21,6 @@ class CartApp {
    * @property { HTMLElement } totalPrice - Element that show the total price of products.
    * @property { HTMLElement } contactForm - Form to add the contact information.
    * @property { Cart } cart
-   * @property { LocalSorageInterface } localCartStorage
    * @property { Contact } contact
    */
 
@@ -32,7 +30,6 @@ class CartApp {
   static totalPrice = document.getElementById( "totalPrice" );
   static contactForm = document.getElementsByClassName( "cart__order__form" )[ 0 ];
   static cart = new Cart( this.itemCartContainer );
-  static localCartStorage = new LocalStorageInterface( this.localCartName );
   static contact = new Contact();
   
   /**
@@ -125,7 +122,7 @@ class CartApp {
 
     // The cart don't have products to show.
 
-    if ( this.localCartStorage.cartList.length === 0 ) {
+    if ( this.cart.isEmpty() ) {
 
       this.itemCartContainer.appendChild (
 
@@ -218,7 +215,7 @@ class CartApp {
 
       // Cart without products after remove.
   
-      if ( !this.itemCartContainer.hasChildNodes() ) {
+      if ( this.cart.isEmpty() ) {
 
         this.itemCartContainer.appendChild(
           makeElement( [

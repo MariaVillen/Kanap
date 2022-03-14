@@ -165,4 +165,7 @@ export class Cart {
 
     }
 
+    isEmpty() {
+      return this.localCart.cartList.length===0;
+    }
   }
