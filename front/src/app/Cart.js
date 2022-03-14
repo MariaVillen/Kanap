@@ -35,7 +35,7 @@ export class Cart {
 
       this.container = container;
       this.localCart = new LocalStorageInterface( cartName );
-      
+
     }
   
     /**
@@ -57,7 +57,7 @@ export class Cart {
         );
 
         this.#totalPrice = this.#cartList.reduce(
-          ( a, b ) => a + ( parseInt( b.quantity ) * parseInt( b.price ) || 0),
+          ( a, b ) => a + ( ( parseInt( b.quantity ) * parseInt( b.price ) ) || 0),
           0
         );
       }
@@ -129,7 +129,7 @@ export class Cart {
 
       this.localCart.modify( id, color, newValue );
 
-      let index = this.#cartList.findIndex( ( el ) => ( el.id = id ) );
+      let index = this.#cartList.findIndex( ( el ) => ( el._id == id && el.color == color ) );
 
       if ( index >= 0 ) {
 
