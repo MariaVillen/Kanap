@@ -235,7 +235,9 @@ class CartApp {
   static async submitCart() {
   
     // Get the ID list of products to order
-    const listToCommand = this.localCartStorage.getProdIdToOrder();
+    
+    const listToCommand = this.cart.localCart.getProdIdToOrder();
+
 
     // There are no products in cart.
 
@@ -265,7 +267,7 @@ class CartApp {
         if ( commandNumber ) {
 
         // Delete Cart and localStorage.
-        this.localCartStorage.reset();
+        this.cart.localCart.reset();
 
         window.location.href =
           "./confirmation.html?command=" + commandNumber;
