@@ -79,21 +79,22 @@ export class Cart {
       try {
 
         let myItemList = await apiInterface.getSomeProducts( myListOfProducts ); 
-      
-        // Render Elements of Cart
-        myItemList.forEach( ( prod ) => {
 
-          let item = this.localCart.cartList.find( ( el ) => el.id === prod._id );
+
+        // Render Elements of Cart
+        this.localCart.cartList.forEach( ( element ) => {
+
+          let item = myItemList.find( ( prod ) => element.id === prod._id );
 
           let myItemCart = new CartItem ( 
-            {_id: prod._id, 
-              quantity: item.quantity,
-              color: item.color,
-              image: prod.image,
-              name: prod.name,
-              description: prod.description,
-              altTxt: prod.altTxt,
-              price: prod.price} 
+            {_id: element.id, 
+              quantity: element.quantity,
+              color: element.color,
+              image: item.image,
+              name: item.name,
+              description: item.description,
+              altTxt: item.altTxt,
+              price: item.price} 
           );
 
           this.#cartList.push( myItemCart );
