@@ -217,7 +217,8 @@ class CartApp {
       this.totalPrice.textContent = total.price;
 
       // Cart without products after remove.
-      if ( !this.itemCartContainer.hastChildNodes ) {
+  
+      if ( !this.itemCartContainer.hasChildNodes() ) {
 
         this.itemCartContainer.appendChild(
           makeElement( [

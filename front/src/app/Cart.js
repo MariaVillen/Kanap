@@ -32,8 +32,10 @@ export class Cart {
      */
   
     constructor( container, cartName = CONFIG.LOCAL_CART ) {
+
       this.container = container;
       this.localCart = new LocalStorageInterface( cartName );
+      
     }
   
     /**
