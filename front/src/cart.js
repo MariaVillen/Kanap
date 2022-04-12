@@ -79,7 +79,7 @@ class CartApp {
         });
       } catch (err) {
         modal(
-          "Desolé, un erreur est survenu. Veuillez réessayer ultérieurement."
+          "Désolée, une erreur est survenue. Veuillez réessayer ultérieurement."
         );
         console.log(err);
       }
