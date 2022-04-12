@@ -30,7 +30,7 @@ export class Contact {
       case "lastName":
         re = /^[A-zÀ-ú' -]*$/;
         errorMessage =
-          'Seulement sont permis les lettres de l\'alphabet et "." et "-".';
+          'Seulement sont permises les lettres de l\'alphabet et "." et "-".';
         break;
       case "address":
         re = /(^[0-9]{1,} )?[^\s-][A-zÀ-ú,' \-.]{2,}/;
@@ -40,7 +40,7 @@ export class Contact {
       case "city":
         re = /^([a-zA-Z\u0080-\u024F]+(?:. |-| |'))*[a-zA-Z\u0080-\u024F]*$/;
         errorMessage =
-          "Seulement sont permis les lettres de l'alphabet et \".-'\" sont aussi valides.";
+          "Seulement sont permises les lettres de l'alphabet et \".-'\" sont aussi valides.";
         break;
       case "email":
         re = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
