@@ -114,7 +114,7 @@ class CartApp {
       this.totalPrice.textContent = totalPrice;
     } catch (err) {
       modal(
-        "Desolé, un erreur est survenu. Veuillez réessayer ultérieurement."
+        "Désolée, une erreur est survenue. Veuillez réessayer ultérieurement."
       );
       console.log(err);
     }
@@ -132,10 +132,10 @@ class CartApp {
     const quantity = parseInt(event.target.value);
     // Quantity validation
     if (quantity < 1) {
-      modal("La quantité à commander ne peut pas être inferieur a 1");
+      modal("La quantité à commander ne peut pas être inférieur à 1.");
       return;
     } else if (quantity > 100) {
-      modal("La quantité à commander ne peut pas être superieur a 100");
+      modal("La quantité à commander ne peut pas être supérieur à 100.");
       return;
     }
     // Change quantity
@@ -154,6 +154,7 @@ class CartApp {
    * @param { EventListenerObject } event
    * @returns { void }
    */
+
   static removeCartItem(event) {
     if (event.target.classList.contains("deleteItem")) {
       const item = event.target.closest("article");
@@ -171,7 +172,7 @@ class CartApp {
           makeElement([
             "p",
             {
-              content: "Votre panier est vide",
+              content: "Votre panier est vide.",
               style: "text-align: center; font-size: 2em; padding: 2em;",
             },
           ])
@@ -190,7 +191,7 @@ class CartApp {
     const listToCommand = this.cart.getProdIdToOrder();
     // There are no products in cart.
     if (listToCommand.length == 0) {
-      modal("Vous n'avez pas de produits à commander", () => {
+      modal("Vous n'avez pas de produits à commander.", () => {
         window.location.href = "./index.html";
       });
     } else {
@@ -211,7 +212,7 @@ class CartApp {
         }
       } catch (error) {
         modal(
-          "Desolé, un erreur est survenu. Veuillez réessayer ultérieurement."
+          "Désolée, une erreur est survenue. Veuillez réessayer ultérieurement."
         );
         console.log(error);
       }

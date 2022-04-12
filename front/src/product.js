@@ -37,7 +37,7 @@ class ProductApp {
       this.load(idProduct);
     } else {
       modal(
-        "Le produit n'a pas été spécifié. Veuillez choisir un produit",
+        "Le produit n'a pas été spécifié. Veuillez choisir un produit.",
         () => {
           window.location.href = "./index.html";
         }
@@ -74,7 +74,7 @@ class ProductApp {
     } catch (error) {
       console.log(error);
       modal(
-        "Desolé, un erreur est survenu. Veuillez réessayer ultérieurement",
+        "Désolée, une erreur est survenue. Veuillez réessayer ultérieurement.",
         () => {
           window.location.href = "./index.html";
         }
@@ -92,19 +92,19 @@ class ProductApp {
 
     // Quantity validation
     if (!quantity) {
-      modal("Veuillez indiquer la quantité à commander");
+      modal("Veuillez indiquer la quantité à commander.");
       return;
     } else if (quantity < 1) {
-      modal("La quantité à commander ne peut pas être inferieur a 1");
+      modal("La quantité à commander ne peut pas être inférieur à 1.");
       return;
     } else if (quantity > 100) {
-      modal("La quantité à commander ne peut pas être superieur a 100");
+      modal("La quantité à commander ne peut pas être supérieur à 100.");
       return;
     }
 
     // Color validation
     if (!this.container.colors.value) {
-      modal("Vous devez choisir une couleur");
+      modal("Veuillez choisir une couleur.");
       return;
     }
 

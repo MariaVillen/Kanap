@@ -72,8 +72,8 @@ export class ProductItem extends Product {
           [
             "p",
             {
-              content: `Desolé, un erreur est survenu. 
-                  Veuillez réessayer ultérieurement: ${error}`,
+              content: `Désolée, une erreur est survenue. 
+              Veuillez réessayer ultérieurement: ${error}`,
               style: "text-align: center;",
             },
           ],

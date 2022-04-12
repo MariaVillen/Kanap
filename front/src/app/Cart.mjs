@@ -153,7 +153,7 @@ export class Cart {
       localStorage.setItem(CONFIG.LOCAL_CART, JSON.stringify(this.#cartList));
       return this.sumTotalPriceAndQuantity();
     } else {
-      modal("Erreur: L'objet à modifier n'existe plus");
+      modal("Erreur: L'objet à modifier n'existe plus.");
     }
   }
 
@@ -175,7 +175,7 @@ export class Cart {
       localStorage.setItem(CONFIG.LOCAL_CART, JSON.stringify(this.#cartList));
       return this.sumTotalPriceAndQuantity();
     } else {
-      modal("Le produit n'a été pas trouvé");
+      modal("Le produit n'a été pas trouvé.");
     }
   }
 
