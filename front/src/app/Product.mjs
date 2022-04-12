@@ -11,24 +11,21 @@
  */
 
 export class Product {
-
   /**
    * @param { Object } prod The object with the values of the properties.
    */
 
-  constructor ( prod ) {
-
+  constructor(prod) {
     this._id = prod._id;
 
     this.image = prod.image;
 
     this.altTxt = prod.altTxt;
 
-    this.price = prod.price;
+    this.price = +prod.price;
 
     this.description = prod.description;
 
     this.name = prod.name;
-
   }
 }

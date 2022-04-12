@@ -1,4 +1,3 @@
-import { ProductList } from "./app/ProductList.mjs";
+import { ProductItem } from "./app/ProductItem.mjs";
 
-
-window.onload = new ProductList().load();
+window.onload = ProductItem.loadAll(document.getElementById("items"));

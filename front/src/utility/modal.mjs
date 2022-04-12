@@ -62,17 +62,11 @@ export function modal ( message, cb = () => {} ) {
       ],
     ],
   ];
-
   let myModal = makeElement( template );
-
   document.getElementsByTagName( "body" )[ 0 ].appendChild( myModal );
-
   myModal.addEventListener( "click", ( e ) => {
-
     e.preventDefault();
     e.target.closest( ".modal" ).remove();
     cb();
-
   });
-
 }
