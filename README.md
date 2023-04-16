@@ -1,10 +1,8 @@
 # KANAP
 API for Kanap website
-<p align = "center"> <img src = "https://i85.servimg.com/u/f85/19/88/52/56/booki10.png" /></p>
+<p align = "center"> <img src = "https://i85.servimg.com/u/f85/19/88/52/56/kanap10.jpg" /></p>
 <p align = "center"> Booki is a travel booking website</p>
 
-## Deploy: 
-   https://mariavillen.github.io/Booki/
 
 ## Compétences:
 
