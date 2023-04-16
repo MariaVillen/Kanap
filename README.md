@@ -1,25 +1,54 @@
-# Kanap #
+# KANAP
+API for Kanap website
+<p align = "center"> <img src = "https://i85.servimg.com/u/f85/19/88/52/56/booki10.png" /></p>
+<p align = "center"> Booki is a travel booking website</p>
 
-This is the front end and back end server for Project 5 of the Web Developer path.
+## Deploy: 
+   https://mariavillen.github.io/Booki/
 
-### Back end Prerequisites ###
+## Compétences:
 
-You will need to have Node and `npm` installed locally on your machine.
+- Créer un plan de test pour une application
+- Valider des données issues de sources externes
+- Interagir avec un web service avec JavaScript
+- Gérer des événements JavaScript
 
-### Back end Installation ###
+<br/>
 
-Clone this repo. From the "back" folder of the project, run `npm install`. You 
-can then run the server with `node server`. 
-The server should run on `localhost` with default port `3000`. If the
-server runs on another port for any reason, this is printed to the
-console when the server starts, e.g. `Listening on port 3001`.
+## Développé avec: 🛠️
+
+<br/>
+
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E))
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
+![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+<br/>
+<br/>
+
+## Spécifications fonctionnelles
+
+[Document avec spécifications ici](https://drive.google.com/file/d/1LwF2sdbz3L1THazgJO6HI8RGOg2IML7F/view?usp=sharing)
 
 
-### Front end Prerequisites ###
+### Prérequis back-end ###
 
-This code was made with webpack. You should run `npm install` on the front
-directory. You can run the development server with `npm run build:dev`.
-The server should run on `localhost` with default port `8080`.
-You should enter on the `html` directory to access the app.
-The complete adress is `localhost:8080/html/index.html`.
+Vous aurez besoin d'avoir Node et `npm` installés localement sur votre machine.
 
+### Installation du back-end ###
+
+Clonez ce reop. Depuis le dossier "back" du projet, exécutez `npm install`. Vous
+pouvez alors exécuter le serveur avec `node server`.
+Le serveur doit fonctionner sur `localhost` avec le port par défaut `3000`. Si le
+serveur s'exécute sur un autre port pour une raison quelconque, ceci est imprimé sur le
+console au démarrage du serveur, par ex. `Écoute sur le port 3001`.
+
+
+### Prérequis front-end ###
+
+Ce code a été réalisé avec webpack. Vous devez exécuter `npm install` sur le répertoire front. 
+Vous pouvez exécuter le serveur de développement avec `npm run build:dev`.
+Le serveur doit fonctionner sur `localhost` avec le port par défaut `8080`.
+Vous devez entrer dans le répertoire `html` pour accéder à l'application.
+L'adresse complète est `localhost:8080/html/index.html`.
