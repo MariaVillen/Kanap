@@ -30,6 +30,12 @@ API pour le site Kanap
 [Document avec spécifications ici](https://drive.google.com/file/d/1LwF2sdbz3L1THazgJO6HI8RGOg2IML7F/view?usp=sharing)
 
 
+## Plan de test
+[Document avec le plan de test ici](https://docs.google.com/spreadsheets/d/16PIe6sG_KygcuuEoT4_FGQBJF-Xt3irE/edit?usp=sharing&ouid=105519208690630881929&rtpof=true&sd=true)
+
+
+## Installation
+
 ### Prérequis back-end ###
 
 Vous aurez besoin d'avoir Node et `npm` installés localement sur votre machine.
