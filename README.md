@@ -1,7 +1,7 @@
 # KANAP
-API for Kanap website
+API pour le site Kanap
 <p align = "center"> <img src = "https://i85.servimg.com/u/f85/19/88/52/56/kanap10.jpg" /></p>
-<p align = "center"> Booki is a travel booking website</p>
+<p align = "center"> Kanap est un site pour la vente de canapés</p>
 
 
 ## Compétences:
